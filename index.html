@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republic of Singapore - Royal Privy Council Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+            background-color: #f4eee1;
+            color: #2c221e;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fffdf9;
+            border: 3px double #bfa15f;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2.section-header {
+            background-color: #bfa15f;
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .header-title {
+            text-align: center;
+            border-bottom: 2px solid #bfa15f;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header-title h1 {
+            font-size: 22px;
+            margin: 5px 0;
+            color: #3b2f2f;
+        }
+        .header-title h3 {
+            font-size: 13px;
+            margin: 0;
+            color: #7c6853;
+            letter-spacing: 1px;
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .form-group {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 10px;
+        }
+        .form-group.full-width {
+            flex: 100%;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #4a3b32;
+        }
+        input[type="text"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #c8b99c;
+            background-color: #fffbf2;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            height: 70px;
+        }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            gap: 6px;
+        }
+        .checkbox-item input {
+            width: auto;
+        }
+        .oath-box {
+            background-color: #f7f2e8;
+            border: 1px solid #d4c5a9;
+            padding: 12px;
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        .submit-btn {
+            background-color: #bfa15f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            letter-spacing: 1px;
+        }
+        .submit-btn:hover {
+            background-color: #a88d4f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Header -->
+    <div class="header-title">
+        <h3>REPUBLIC OF SINGAPORE — ROYAL PRIVY COUNCIL</h3>
+        <h1>DEPARTMENT OF SOVEREIGN PATRONAGE & STATE HONORS</h1>
+        <h3 style="color: #a04000; margin-top: 5px;">CLASSIFICATION: CONFIDENTIAL / ROYAL EYES ONLY</h3>
+    </div>
+
+    <!-- Netlify Form -->
+    <form name="royal-privy-council-application" method="POST" data-netlify="true">
+        
+        <!-- SECTION I -->
+        <h2 class="section-header">I. SOVEREIGN NOMINEE AUTHENTICATION & HERITAGE CREDENTIALS</h2>
+        
+        <div class="form-row">
+            <div class="form-group full-width">
+                <label for="full_name">Full Legal Name (including all hereditary, state, or conferred honorifies / titles):</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="honorific">Recognized Style / Honorific:</label>
+                <input type="text" id="honorific" name="honorific">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="state_allegiance">State of Allegiance:</label>
+                <input type="text" id="state_allegiance" name="state_allegiance">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="residence">Principal Residence / Estate Address:</label>
+                <input type="text" id="residence" name="residence">
+            </div>
+            <div class="form-group">
+                <label for="contact">Encrypted Secure Diplomatic Contact (Signal/WhatsApp):</label>
+                <input type="text" id="contact" name="contact">
+            </div>
+        </div>
+
+        <!-- SECTION II -->
+        <h2 class="section-header">II. EXECUTIVE STANDING, GLOBAL FOOTPRINT & STATE INFLUENCE</h2>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="enterprise">Primary Enterprise / Sovereign Holding Entity:</label>
+                <input type="text" id="enterprise" name="enterprise">
+            </div>
+            <div class="form-group">
+                <label for="designation">Executive Board / Governmental Designation:</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group full-width">
+                <label for="economic_impact">Summary of International Economic Impact & State-Level Philanthropic Engagements:</label>
+                <textarea id="economic_impact" name="economic_impact"></textarea>
+            </div>
+        </div>
+
+        <!-- SECTION III -->
+        <h2 class="section-header">III. SUPPLEMENTAL ELITE & DIPLOMATIC SECURITY QUESTIONS</h2>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="state_orders">Previous State Orders, Decorations, or Royal Patronage Received:</label>
+                <input type="text" id="state_orders" name="state_orders">
+            </div>
+            <div class="form-group">
+                <label for="diplomatic_passport">Existing Diplomatic Passport / Immunity Status:</label>
+                <input type="text" id="diplomatic_passport" name="diplomatic_passport">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group full-width">
+                <label for="sponsor_reference">Nominating Sponsor Reference (Name of Existing Privy Council Member or Royal Liaison):</label>
+                <input type="text" id="sponsor_reference" name="sponsor_reference">
+            </div>
+        </div>
+
+        <!-- SECTION IV -->
+        <h2 class="section-header">IV. FINANCIAL SOLVENCY & SOVEREIGN PATRONAGE QUALIFICATION</h2>
+        <p style="font-size: 12px; margin-bottom: 8px;"><strong>Select Verified Liquid Asset & Capital Portfolio Bracket (For Chancellery Compliance Audit):</strong></p>
+        
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="tier3" name="asset_bracket" value="Tier III: $500k - $1M USD (Patron Associate)">
+                <label for="tier3" style="font-weight:normal;">Tier III: $500,000 – $1,000,000 USD (Patron Associate)</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="tier2" name="asset_bracket" value="Tier II: $1M - $5M USD (Commander Fellow)">
+                <label for="tier2" style="font-weight:normal;">Tier II: $1,000,000 – $5,000,000 USD (Commander Fellow)</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="tier1" name="asset_bracket" value="Tier I: $5M - $10M+ USD (Grand Cress Dignitary)">
+                <label for="tier1" style="font-weight:normal;">Tier I: $5,000,000 – $10,000,000+ USD (Grand Cress Dignitary)</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="elite" name="asset_bracket" value="Elite Sovereign Tier: $10M+ USD (Privy Council Peer)">
+                <label for="elite" style="font-weight:normal;">Elite Sovereign Tier: $10,000,000+ USD (Privy Council Peer)</label>
+            </div>
+        </div>
+
+        <div class="form-row" style="margin-top: 15px;">
+            <div class="form-group">
+                <label for="capital_source">Primary Capital Source (Real Estate / Tech / Sovereign Fund):</label>
+                <input type="text" id="capital_source" name="capital_source">
+            </div>
+            <div class="form-group">
+                <label for="endowment_contribution">Capacity for Annual Sovereign Endowment Contribution:</label>
+                <input type="text" id="endowment_contribution" name="endowment_contribution">
+            </div>
+        </div>
+
+        <p style="font-size: 12px; margin-top: 10px; margin-bottom: 5px;"><strong>Verification Methods:</strong></p>
+        <div class="checkbox-group" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="checkbox-item">
+                <input type="checkbox" id="ver_audit" name="verification_methods" value="Audited Asset Statement">
+                <label for="ver_audit" style="font-weight:normal;">Audited Asset Statement</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="ver_bank" name="verification_methods" value="Certified Bank Letter">
